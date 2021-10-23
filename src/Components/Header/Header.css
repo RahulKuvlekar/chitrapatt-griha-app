@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Rozha+One&display=swap");
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  background-color: #0a0608;
+  font-size: 5vh;
+  color: white;
+  font-family: "Rozha One", serif;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+}
+.header__title {
+  color: var(--netflix--red);
+}
