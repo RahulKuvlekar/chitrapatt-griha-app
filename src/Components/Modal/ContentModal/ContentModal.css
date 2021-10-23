@@ -1,0 +1,174 @@
+button.post__button {
+  color: white;
+}
+.contentModal__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  color: white;
+  background-color: rgba(32, 32, 32, 1);
+  border: 2px solid white;
+  border-radius: 2rem;
+  box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%),
+    0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+  padding: 2rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* scrollbar-width: none; */
+}
+.contentModal__CloseIcon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -1.5rem;
+  /* margin-left: 1.5rem; */
+  position: sticky;
+  top: -1.5rem;
+  right: 5px;
+  z-index: 1231;
+  cursor: pointer;
+}
+
+.contentModal__landscape {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.contentModal__portrait {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: none;
+  box-sizing: content-box;
+}
+
+.tagline {
+  padding-bottom: 10px;
+  align-self: center;
+  font-weight: 500;
+}
+
+.contentModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.contentModal::-webkit-scrollbar,
+.contentModal__box::-webkit-scrollbar {
+  display: none;
+}
+
+.contentModal__about {
+  padding: 10px;
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: 300;
+}
+
+.contentModal__title {
+  font-size: 2rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentModal__description {
+  display: flex;
+  font-size: 0.7rem;
+  overflow-y: scroll;
+  height: 40%;
+  max-height: 150px;
+  padding: 1rem;
+  border-radius: 20px;
+  scrollbar-width: thin; /* Firefox */
+  box-shadow: 0 0 5px #fff;
+  text-align: justify;
+  margin: 0.5rem 0;
+}
+.contentModal__description > p {
+  opacity: 0.7;
+}
+
+.contentModal__description::-webkit-scrollbar {
+  display: none;
+}
+
+.contentModal__caraosel {
+  margin: 1rem 0;
+}
+
+.youtube__button svg {
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 1440px) {
+  .contentModal__description {
+    max-height: 200px;
+  }
+  .contentModal__box {
+    max-width: 1100px;
+    max-height: 920px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .contentModal__landscape {
+    display: none;
+  }
+  .contentModal__portrait {
+    display: flex;
+    width: 100%;
+  }
+  .contentModal {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .contentModal__about {
+    width: 100%;
+    padding: 0 1rem;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .contentModal__title {
+    font-size: 2rem;
+  }
+  .contentModal__description {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  button.post__button {
+    width: 60%;
+    max-width: 350px;
+    z-index: 89;
+  }
+  .contentModal__landscape {
+    margin-top: 1rem;
+  }
+  .contentModal__title {
+    font-size: 1.5rem;
+  }
+  .contentModal__box {
+    padding: 0 0.6rem;
+  }
+  .contentModal__CloseIcon {
+    top: 0;
+  }
+}
