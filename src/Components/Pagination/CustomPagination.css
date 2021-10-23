@@ -1,0 +1,22 @@
+.custom-pagination {
+  color: var(--netflix--red);
+  padding: 1rem 0 0 0;
+}
+.custom-pagination ul {
+  align-items: center;
+  justify-content: center;
+}
+.custom-pagination ul li svg,
+.custom-pagination ul li button {
+  background-color: var(--netflix-black);
+  color: white;
+}
+.custom-pagination ul li button:active {
+  background-color: #c62c3185;
+}
+.custom-pagination
+  ul
+  li
+  button.css-rppfq7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: #c62c316e;
+}
