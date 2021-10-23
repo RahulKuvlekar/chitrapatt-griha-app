@@ -1,0 +1,62 @@
+.post__section {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 220px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--netflix-black);
+  position: relative;
+}
+.post__section:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(255, 255, 255, 0.9) 0px 3px 10px;
+  background: rgb(69, 148, 196);
+  background: linear-gradient(
+    0deg,
+    rgba(69, 148, 196, 0.2) 0%,
+    rgba(0, 0, 0, 0.8897934173669468) 37%
+  );
+}
+
+.post__badge.css-1c32n2y-MuiBadge-root {
+  width: 100%;
+  position: unset;
+  color: red;
+}
+
+.post__poster {
+  width: 100%;
+  object-fit: cover;
+}
+
+.post__brand {
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.post__info {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.2rem 0;
+  opacity: 0.5;
+}
+.post__type {
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 500px) {
+  .post__section {
+    width: 100%;
+    max-width: 350px;
+    z-index: 89;
+  }
+}
