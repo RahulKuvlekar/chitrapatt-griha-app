@@ -28,17 +28,7 @@ const Trending = () => {
   return (
     <>
       <h1>Trending Pg</h1>
-      <div
-        id="row__section"
-        style={{
-          display: "flex",
-          flexFlow: "row wrap",
-          justifyContent: "space-around",
-          alignItems: "center",
-          width: "100%",
-          textAlign: "center",
-        }}
-      >
+      <div className="row__section">
         {content.length > 0 &&
           content.map((data) => {
             // console.log(data);

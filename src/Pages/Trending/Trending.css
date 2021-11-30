@@ -1,13 +1,13 @@
-#row__section {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  text-align: center;
+.row__section {
+  display: flex !important;
+  flex-flow: row wrap !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  width: 100% !important;
+  text-align: center !important;
 }
 @media all and (max-width: 500px) {
-  #row__section {
+  .row__section {
     display: flex !important;
     flex-flow: column wrap !important;
     justify-content: center !important;
