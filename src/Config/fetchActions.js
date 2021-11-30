@@ -6,6 +6,8 @@ export const fetchMovies = `/discover/movie?api_key=${API_KEY}&language=en-US&so
 
 export const fetchTVseries = `/discover/tv?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false`;
 
+export const fetchUpcoming = `/movie/upcoming?api_key=${API_KEY}&language=en-US`;
+
 export const fetchGeners = (type) =>
   `/genre/${type}/list?api_key=${API_KEY}&language=en-US`;
 
