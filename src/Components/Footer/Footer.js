@@ -3,7 +3,7 @@ import "./Footer.css";
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import WhatshotRoundedIcon from "@mui/icons-material/WhatshotRounded";
+import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import MovieCreationRoundedIcon from "@mui/icons-material/MovieCreationRounded";
 import TvRoundedIcon from "@mui/icons-material/TvRounded";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
@@ -53,10 +53,7 @@ export default function SimpleBottomNavigation() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction
-            label="Trendings"
-            icon={<WhatshotRoundedIcon />}
-          />
+          <BottomNavigationAction label="Home" icon={<HomeRoundedIcon />} />
           <BottomNavigationAction
             label="Movies"
             icon={<MovieCreationRoundedIcon />}

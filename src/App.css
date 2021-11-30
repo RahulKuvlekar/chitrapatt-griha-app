@@ -9,7 +9,14 @@
   background-color: rgb(32, 32, 32);
   color: white;
   padding: 12vh 0;
-  overflow-x: scroll;
+  overflow-x: auto;
+}
+.css-1oqqzyl-MuiContainer-root {
+  padding: 0 !important;
 }
 
-
+@media (min-width: 1200px) {
+  .css-1oqqzyl-MuiContainer-root {
+    max-width: unset !important;
+  }
+}

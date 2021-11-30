@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Trending from "./Pages/Trending/Trending";
+import Home from "./Pages/Home/Home";
 import Movies from "./Pages/Movies/Movies";
 import TVseries from "./Pages/TVseries/TVseries";
 import Search from "./Pages/Search/Search";
@@ -15,7 +15,7 @@ function App() {
       <div className="app">
         <Container>
           <Switch>
-            <Route exact path="/" component={Trending} />
+            <Route exact path="/" component={Home} />
             <Route exact path="/movies" component={Movies} />
             <Route path="/tv-series" component={TVseries} />
             <Route path="/search" component={Search} />

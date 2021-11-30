@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "./Trending.css";
+import "./Home.css";
 import Post from "../../Components/Post/Post";
 import axiosReq from "../../Config/axiosReq";
 import { fetchTrendingAllDay } from "../../Config/fetchActions";
 import CustomPagination from "../../Components/Pagination/CustomPagination";
-
+import Banner from "../../Components/Banner/Banner";
 const Trending = () => {
   // console.log(process.env.REACT_APP_API_KEY);
   const [content, setContent] = useState([]);
@@ -27,6 +27,7 @@ const Trending = () => {
 
   return (
     <>
+      <Banner />
       <h1>Trending Pg</h1>
       <div
         id="row__section"
