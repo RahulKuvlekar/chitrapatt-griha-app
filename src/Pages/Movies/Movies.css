@@ -14,3 +14,18 @@
     align-items: center;
   }
 }
+@media all and (min-width: 900px) {
+  .movies__row__section {
+    column-gap: 0.7rem;
+  }
+}
+@media all and (min-width: 1100px) {
+  .movies__row__section {
+    column-gap: 0.9rem;
+  }
+}
+@media all and (min-width: 1330px) {
+  .movies__row__section {
+    column-gap: 1.2rem;
+  }
+}

@@ -12,6 +12,7 @@ const Banner = () => {
     return str?.length > len ? str.substr(0, len - 1) + "..." : str;
   };
 
+  let bannerName = movie?.title || movie?.name || movie?.original_name;
   const fetchVideo = async (id) => {
     console.log("movie id", id);
     try {
@@ -46,30 +47,38 @@ const Banner = () => {
         background: `url("${IMG_BASE_URL_ORIGINAL}${movie?.backdrop_path}")no-repeat center center/cover`,
       }}
     >
-      <div className="banner__content">
-        <h1 className="banner__title">
-          {movie?.title || movie?.name || movie?.original_name}
-        </h1>
-        {/* {title} */}
-        {/* Button*2 */}
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(0,0,0,0.5)",
+        }}
+      >
+        <div className="banner__content">
+          <h1 className="banner__title">
+            {bannerName?.length > 22 ? truncate(bannerName, 25) : bannerName}
+          </h1>
+          {/* {title} */}
+          {/* Button*2 */}
 
-        <div className="banner__buttons">
-          <a
-            className="banner__btn"
-            href={`https://www.youtube.com/watch?v=${video}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Play
-          </a>
-          {/* <button className="banner__btn">MyList</button> */}
+          <div className="banner__buttons">
+            <a
+              className="banner__btn"
+              href={`https://www.youtube.com/watch?v=${video}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Play
+            </a>
+            {/* <button className="banner__btn">MyList</button> */}
+          </div>
+          {/* movie discription */}
+          <h1 className="banner__description">
+            {truncate(movie?.overview, 150)}
+          </h1>
         </div>
-        {/* movie discription */}
-        <h1 className="banner__description">
-          {truncate(movie?.overview, 150)}
-        </h1>
+        <div className="banner__fadeBottom"></div>
       </div>
-      <div className="banner__fadeBottom"></div>
     </header>
   );
 };
