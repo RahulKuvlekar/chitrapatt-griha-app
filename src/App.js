@@ -13,7 +13,9 @@ function App() {
     <Router>
       <Header />
       <div className="app">
-        <Container>
+        <Container
+          style={{ padding: "0 !important", maxWidth: "unset !important" }}
+        >
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/movies" component={Movies} />
