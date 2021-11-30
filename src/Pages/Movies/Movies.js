@@ -5,6 +5,7 @@ import CustomPagination from "../../Components/Pagination/CustomPagination";
 import { fetchMovies } from "../../Config/fetchActions";
 import Genres from "../../Components/Genres/Genres";
 import useSelectedGenre from "../../Hooks/useSelectedGenre/useSelectedGenre";
+import "./Movies.css";
 
 const Movies = () => {
   const [content, setContent] = useState([]);
@@ -38,7 +39,7 @@ const Movies = () => {
         setSelectedGenres={setSelectedGenres}
         setPage={setPage}
       />
-      <div className="row__section">
+      <div className="movies__row__section">
         {content.length > 0 &&
           content.map((data) => {
             // console.log(data);
