@@ -8,9 +8,9 @@
 }
 @media all and (max-width: 500px) {
   #row__section {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    flex-flow: column wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 }
