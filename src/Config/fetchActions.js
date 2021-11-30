@@ -8,6 +8,19 @@ export const fetchTVseries = `/discover/tv?api_key=${API_KEY}&language=en-US&sor
 
 export const fetchUpcoming = `/movie/upcoming?api_key=${API_KEY}&language=en-US`;
 
+export const request = {
+  fetchUpcoming: `/movie/upcoming?api_key=${API_KEY}&language=en-US`,
+  fetchLatest: `/movie/latest?api_key=${API_KEY}&language=en-US`,
+  fetchTrending: `/trending/movie/week?api_key=${API_KEY}&language=en-US`,
+  fetchTrendingTV: `/trending/tv/week?api_key=${API_KEY}&language=en-US`,
+  fetecTopRated: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
+  fetchActionMovies: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
+  fetchComdeyMovies: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
+  fetchHorrorMovies: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
+  fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
+  fetchDocumentriesMovies: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
+};
+
 export const fetchGeners = (type) =>
   `/genre/${type}/list?api_key=${API_KEY}&language=en-US`;
 
