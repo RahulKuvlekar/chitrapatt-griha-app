@@ -14,7 +14,16 @@
 .css-1oqqzyl-MuiContainer-root {
   padding: 0 !important;
 }
-
+.css-1qsxih2 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+@media (min-width: 600px) {
+  .css-1qsxih2 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
 @media (min-width: 1200px) {
   .css-1oqqzyl-MuiContainer-root {
     max-width: unset !important;

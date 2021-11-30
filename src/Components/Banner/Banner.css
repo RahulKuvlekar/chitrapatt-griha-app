@@ -38,18 +38,13 @@
   color: white;
   transition: all 400ms ease;
   background-color: rgba(51, 51, 51, 0.5);
+  text-decoration: none;
 }
 .banner__btn:hover {
   color: black;
   background-color: white;
 }
-.banner__btn a {
-  color: white;
-  text-decoration: none;
-}
-.banner__btn:hover a {
-  color: black;
-}
+
 .banner__fadeBottom {
   height: 10rem;
   background-image: linear-gradient(

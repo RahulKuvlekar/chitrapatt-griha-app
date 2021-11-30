@@ -51,15 +51,14 @@ const Banner = () => {
         {/* Button*2 */}
 
         <div className="banner__buttons">
-          <button className="banner__btn">
-            <a
-              href={`https://www.youtube.com/watch?v=${video}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Play
-            </a>
-          </button>
+          <a
+            className="banner__btn"
+            href={`https://www.youtube.com/watch?v=${video}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Play
+          </a>
           {/* <button className="banner__btn">MyList</button> */}
         </div>
         {/* movie discription */}
