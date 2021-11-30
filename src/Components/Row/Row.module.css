@@ -1,0 +1,38 @@
+.row {
+  /* margin-right: 1.4rem; */
+}
+.row button {
+  width: 100%;
+  margin: 0 6rem;
+}
+.row h1 {
+  padding: 1.5rem 0 1.5rem 1.4rem;
+  font-weight: 900;
+}
+.row__list {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.row__list::-webkit-scrollbar {
+  display: none;
+}
+
+.row__post {
+  object-fit: contain;
+  width: 100%;
+  max-height: 150px;
+  margin-right: 1.3rem;
+  transition: transform 450ms;
+}
+.row__post:hover {
+  transform: scale(1.05);
+}
+
+.row__post_isLarge {
+  max-height: 300px;
+}
+.row__post:hover {
+  transform: scale(1.15);
+}
