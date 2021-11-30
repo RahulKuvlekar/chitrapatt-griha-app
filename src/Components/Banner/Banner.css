@@ -1,0 +1,67 @@
+.banner {
+  height: 500px;
+  color: white;
+  object-fit: contain;
+  min-width: 100% !important;
+}
+/* .banner::after{
+      content: " ";
+      background: rgba(0, 0, 0, .8);
+      z-index: 100;
+  } */
+.banner__content {
+  margin-left: 2rem;
+  padding-top: 8.8rem;
+  height: 200px;
+  box-sizing: content-box;
+}
+.banner__title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  padding: 0 0 0 0.3rem;
+}
+.banner__description {
+  max-width: 380px;
+  line-height: 1.3;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+}
+.banner__btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding: 0.5rem 5rem;
+  margin: 0 1rem 0 0;
+  color: white;
+  transition: all 400ms ease;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+.banner__btn:hover {
+  color: black;
+  background-color: white;
+}
+.banner__btn a {
+  color: white;
+  text-decoration: none;
+}
+.banner__btn:hover a {
+  color: black;
+}
+.banner__fadeBottom {
+  height: 10rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
+@media (max-width: 450px) {
+  .banner__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 0 0 0 0.3rem;
+  }
+}
