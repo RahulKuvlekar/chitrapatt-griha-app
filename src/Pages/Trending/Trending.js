@@ -28,7 +28,7 @@ const Trending = () => {
   return (
     <>
       <h1>Trending Pg</h1>
-      <div className="row__section">
+      <div id="row__section">
         {content.length > 0 &&
           content.map((data) => {
             // console.log(data);
