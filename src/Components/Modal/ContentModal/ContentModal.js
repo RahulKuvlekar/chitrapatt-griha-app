@@ -31,7 +31,7 @@ export default function ContentModal({ children, media_type, id }) {
   const fetchData = async () => {
     try {
       const { data } = await axiosReq.get(fetchContentData(media_type, id));
-      console.log(media_type, " feteh data ", id, data);
+      // console.log(media_type, " feteh data ", id, data);
       setContent(data);
     } catch (error) {
       console.log(error);
@@ -40,7 +40,7 @@ export default function ContentModal({ children, media_type, id }) {
   const fetchVideo = async () => {
     try {
       const { data } = await axiosReq.get(fetchContentVideo(media_type, id));
-      // console.log(media_type, " feteh data ",data?.results[0]?.key);
+      // console.log(media_type, " feteh data ", data?.results[0]?.key);
       setVideo(data?.results[0]?.key);
     } catch (error) {
       console.log(error);
