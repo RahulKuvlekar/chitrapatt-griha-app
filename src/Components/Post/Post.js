@@ -19,6 +19,10 @@ const Post = ({
         <Badge
           className="post__badge"
           badgeContent={vote_average}
+          style={{
+            width: "100%",
+            position: "unset",
+          }}
           color={vote_average > 6 ? "primary" : "secondary"}
         />
         <img

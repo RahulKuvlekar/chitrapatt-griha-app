@@ -5,12 +5,13 @@
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1rem;
   margin: 0.5rem 0;
   transition: all 0.3s ease-in-out;
   background-color: var(--netflix-black);
   position: relative;
+  min-height: 420px;
 }
 .post__section:hover {
   transform: scale(1.1);
@@ -21,12 +22,6 @@
     rgba(69, 148, 196, 0.2) 0%,
     rgba(0, 0, 0, 0.8897934173669468) 37%
   );
-}
-
-.post__badge.css-1c32n2y-MuiBadge-root {
-  width: 100%;
-  position: unset;
-  color: red;
 }
 
 .post__poster {
@@ -58,5 +53,6 @@
     width: 100%;
     max-width: 350px;
     z-index: 89;
+    min-height: fit-content;
   }
 }
