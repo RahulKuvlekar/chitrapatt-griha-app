@@ -1,16 +1,8 @@
-.row__section {
-  display: flex !important;
-  flex-flow: row wrap !important;
-  justify-content: space-around !important;
-  align-items: center !important;
-  width: 100% !important;
-  text-align: center !important;
-}
 @media all and (max-width: 500px) {
-  .row__section {
-    display: flex !important;
-    flex-flow: column wrap !important;
-    justify-content: center !important;
-    align-items: center !important;
+  #row__section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
