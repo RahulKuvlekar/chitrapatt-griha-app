@@ -16,7 +16,7 @@ button.post__button {
     0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
   padding: 2rem;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   /* scrollbar-width: none; */
 }
 .contentModal__CloseIcon {
@@ -89,7 +89,7 @@ button.post__button {
 .contentModal__description {
   display: flex;
   font-size: 0.7rem;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 40%;
   max-height: 150px;
   padding: 1rem;
@@ -142,7 +142,7 @@ button.post__button {
     width: 100%;
     padding: 0 1rem;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
   }
   .contentModal__title {
