@@ -1,9 +1,12 @@
 import React from "react";
 import "./Header.css";
+import { useHistory } from "react-router-dom";
+
 const Header = () => {
+  const history = useHistory();
   return (
     <header className="header">
-      <span onClick={() => window.scroll(0, 0)} className="header__title">
+      <span onClick={() => history.push("/")} className="header__title">
         चित्रपट गृह 🎉
       </span>
     </header>

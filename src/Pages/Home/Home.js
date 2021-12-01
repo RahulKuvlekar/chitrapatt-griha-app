@@ -26,6 +26,7 @@ const Trending = () => {
       // return () => {
       //   setContent([]);
       // };
+      window.scroll(0, 0);
     },
     [
       // page
